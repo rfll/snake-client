@@ -3,7 +3,7 @@ const { MOVE_UP_KEY, MOVE_LEFT_KEY, MOVE_DOWN_KEY, MOVE_RIGHT_KEY, message } = r
 // Stores the active TCP connection object.
 let connection;
 
-const setupInput = function (conn) {
+const setupInput = function(conn) {
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
@@ -13,7 +13,7 @@ const setupInput = function (conn) {
   return stdin;
 };
 
-const handleUserInput = function (key) {
+const handleUserInput = function(key) {
 
   // \u0003 maps to ctrl+c input
   if (key === '\u0003') {
@@ -43,4 +43,4 @@ const handleUserInput = function (key) {
 
 module.exports = {
   setupInput,
-}
+};
