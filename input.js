@@ -36,7 +36,7 @@ if (key === MOVE_RIGHT_KEY) {
   connection.write('Move: right');
 }
 
-if (key === message[key]) {
+if (message[key]) {
   connection.write(message[key]);
 }
 
