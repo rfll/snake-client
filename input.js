@@ -33,6 +33,18 @@ if (key === '\s') {
 if (key === '\d') {
   connection.write('Move: right');
 }
+
+if (key === '\p') {
+  connection.write('Say: Billy Jean issssss');
+}
+
+if (key === '\o') {
+  connection.write('Say: Ssssmooth criminal');
+}
+
+if (key === '\i') {
+  connection.write('Say: Jusssst beat it');
+}
 };
 
 module.exports = {
