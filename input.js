@@ -1,4 +1,4 @@
-const { MOVE_UP_KEY, MOVE_LEFT_KEY, MOVE_DOWN_KEY, MOVE_RIGHT_KEY } = require('./constants');
+const { MOVE_UP_KEY, MOVE_LEFT_KEY, MOVE_DOWN_KEY, MOVE_RIGHT_KEY, message } = require('./constants');
 
 // Stores the active TCP connection object.
 let connection;
@@ -36,17 +36,13 @@ if (key === MOVE_RIGHT_KEY) {
   connection.write('Move: right');
 }
 
-if (key === '\p') {
-  connection.write('Say: Billy Jean issssss');
+if (key === message[key]) {
+  connection.write(message[key]);
 }
 
-if (key === '\o') {
-  connection.write('Say: Ssssmooth criminal');
-}
-
-if (key === '\i') {
-  connection.write('Say: Jusssst beat it');
-}
+// if (key === '\o') {
+//   connection.write('Say: Ssssmooth criminal');
+// }
 };
 
 module.exports = {
