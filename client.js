@@ -13,21 +13,6 @@ const connect = function () {
     conn.write('Name: MJ');
   });
 
-  // conn.on('connect', (connect) => {
-  //   setInterval(() => {
-  //     conn.write('Move: up');
-  //   }, 100);
-  //   setInterval(() => {
-  //     conn.write('Move: up');
-  //   }, 200);
-  //   setInterval(() => {
-  //     conn.write('Move: right');
-  //   }, 300);
-  //   setInterval(() => {
-  //     conn.write('Move: right');
-  //   }, 400);
-  // });
-
   conn.on('data', (data) => {
     // code that does something when the connection is first established
     process.stdout.write(data);
@@ -42,6 +27,4 @@ const connect = function () {
 module.exports = {
   connect,
 };
-
-// module.exports = connect();
 
