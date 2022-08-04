@@ -6,6 +6,12 @@ const MOVE_LEFT_KEY = '\a';
 const MOVE_DOWN_KEY = '\s';
 const MOVE_RIGHT_KEY = '\d';
 
+const message = {
+  "\i": "Say: Jusssst beat it",
+  "\o": "Say: Ssssmooth criminal",
+  "\p": "Say: Billy Jean issssss"
+}
+
 
 
 module.exports = {
@@ -14,5 +20,6 @@ module.exports = {
   MOVE_UP_KEY,
   MOVE_LEFT_KEY,
   MOVE_DOWN_KEY,
-  MOVE_RIGHT_KEY
+  MOVE_RIGHT_KEY,
+  message
 };
