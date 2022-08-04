@@ -1,16 +1,16 @@
-const IP = '165.227.47.243'
+const IP = '165.227.47.243';
 const PORT = 50541;
 
-const MOVE_UP_KEY = '\w';
-const MOVE_LEFT_KEY = '\a';
-const MOVE_DOWN_KEY = '\s';
-const MOVE_RIGHT_KEY = '\d';
+const MOVE_UP_KEY = 'w';
+const MOVE_LEFT_KEY = 'a';
+const MOVE_DOWN_KEY = 's';
+const MOVE_RIGHT_KEY = 'd';
 
 const message = {
-  "\i": "Say: Jusssst beat it",
-  "\o": "Say: Ssssmooth criminal",
-  "\p": "Say: Billy Jean issssss"
-}
+  "i": "Say: Jusssst beat it",
+  "o": "Say: Ssssmooth criminal",
+  "p": "Say: Billy Jean issssss"
+};
 
 
 
